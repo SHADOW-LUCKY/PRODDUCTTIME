@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRODUCTS(BY LUCKY)</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+ <body>
+  <!-- NAVEGACION -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   <div class="container-fluid ">
+    <a class="navbar-brand" href="/">Products App (H.Q.P EDITION)</a>
+   </div>
+  </nav>
+  <!-- FIN NAVEGACION -->
+  <div class="bg"></div>
+  <div class="container ">
+   <!-- APPLICACION -->
+   <div id="App" class="row pt-5">
+    <!-- FORMULARIO -->
+    <div class="col-md-4">
+     <div class="card ">
+      <div class="card-header">
+       <h4>Add A Product</h4>
+      </div>
+      <form id="product-form" class="card-body">
+       <div class="row pt-2">
+        <div class="form-group">
+         <input
+          type="text"
+          id="name"
+          placeholder="Product Name"
+          class="form-control"
+         />
+        </div>
+       </div>
+       <div class="row pt-2">
+        <div class="form-group">
+         <input
+          type="number"
+          id="price"
+          step="0.01"
+          placeholder="Product Price"
+          class="form-control"
+         />
+        </div>
+       </div>
+       <div class="row pt-2">
+        <div class="form-group">
+         <input
+          type="number"
+          id="year"
+          min="0"
+          max="2030"
+          step="1"
+          class="form-control"
+          placeholder="product year"
+         />
+        </div>
+       </div>
+       <div class="row pt-2">
+        <div class="form-group">
+         <select id="tmons" class="form-select">
+          <option value="N/A">Type of money</option>
+          <option value="£">Pound(£)</option>
+          <option value="¥">Yen(¥)</option>
+          <option value="€">Euro(€)</option>
+          <option value="$">Dollar($)</option>
+          <option value="₩">Won(₩)</option>
+          <option value="₿">bitcoin(₿)</option>
+         </select>
+        </div>
+       </div>
+       <div>
+        <textarea
+         class="form-control form-label mt-4"
+         id="description"
+         cols="30"
+         rows="10"
+         placeholder="!Give us a great description about it¡"
+         value=""
+        ></textarea>
+       </div>
+       <input type="submit" value="Save" class="btn btn-primary btn-block " />
+      </form>
+      <!-- FIN FORMULARIO -->
+     </div>
+    </div>
+
+    <!-- PRODUCTS LIST -->
+    <div id="product-list" class="col-md-8"></div>
+   </div>
+   <!-- FIN PRODUCTOS-->
+  </div>
+
+  <script src="java.js" type="module"></script>
+ </body>
+</html>
